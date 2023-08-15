@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "BentonSans", "Helvetica Neue", sans-serif;
+  background-color: #3b2f63;
+  background-image: radial-gradient(
+      circle at 50% top,
+      rgba(84, 90, 182, 0.6) 0%,
+      rgba(84, 90, 182, 0) 75%
+    ),
+    radial-gradient(circle at right top, #794aa2 0%, rgba(121, 74, 162, 0) 57%);
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.navigation-inner {
+  display: flex;
+  gap: 0 15px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 0 15px;
+  background-color: rgba(0, 0, 0, 0);
+  list-style-type: none;
+}
+
+.logo img {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav a {
+  color: rgb(203, 193, 210);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.panel {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: none;
+}
+
+.logIn {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  color: rgb(203, 193, 210);
+  text-decoration: none;
+}
+
+.panel span {
+  color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+}
+
+.signUp {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  height: 2rem;
+}
+
+.signUp {
+  color: white;
+  text-decoration: none;
+}
+
+.logIn:hover {
+  color: white;
+}
+
+.signUp:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  color: #79589f;
+}
+
+.herokuButtons {
+  padding: 50px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background-image: radial-gradient(
+      ellipse at 0% bottom,
+      rgba(118, 72, 160, 0.7) 0%,
+      rgba(118, 72, 160, 0) 60%
+    ),
+    radial-gradient(ellipse at 90% bottom, #523f8c 0%, rgba(82, 63, 140, 0) 40%);
+}
+
+.bar {
+  color: rgb(203, 193, 210);
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .bar {
+    display: block;
+  }
+
+  .menu,
+  .panel {
+    display: none;
+  }
+}
